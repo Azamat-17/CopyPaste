@@ -91,7 +91,7 @@ img { max-width: 100%; display: block; }
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: radial-gradient(circle at 30% 20%, #1a2338, var(--dark));
+  background: radial-gradient(circle at 30% 20%, rgba(26, 35, 56, 0.85), rgba(10, 14, 24, 0.85));
   padding: 7px;
   box-shadow: 0 6px 16px rgba(10, 14, 24, 0.25);
 }
@@ -305,7 +305,7 @@ h1 {
   width: 220px;
   height: 220px;
   border-radius: 32px;
-  background: radial-gradient(circle at 30% 20%, #1a2338, var(--dark));
+  background: radial-gradient(circle at 30% 20%, rgba(26, 35, 56, 0.85), rgba(10, 14, 24, 0.85));
   display: flex;
   align-items: center;
   justify-content: center;
