@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ky">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CopyPaste — копи-центр в Таласе</title>
-<meta name="description" content="CopyPaste — копи-центр в Таласе. Ксерокопия и печать документов, переплёт и ламинирование. Ежедневно 09:00–18:00.">
+<title>CopyPaste — Таласта копи-борбор</title>
+<meta name="description" content="CopyPaste — Таластагы копи-борбор. Документтерди көчүрүү жана басып чыгаруу, тиктирүү жана ламинирлөө. Күн сайын 09:00–18:00.">
 <link rel="icon" href="logocopypaste.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,14 +23,19 @@
     </a>
 
     <nav class="main-nav" id="main-nav">
-      <a href="#services">Услуги</a>
-      <a href="#about">О нас</a>
-      <a href="#contacts">Контакты</a>
+      <a href="#services" data-i18n="nav_services">Кызматтар</a>
+      <a href="#about" data-i18n="nav_about">Биз жөнүндө</a>
+      <a href="#contacts" data-i18n="nav_contacts">Байланыш</a>
     </nav>
 
-    <a class="btn btn-primary header-cta" href="tel:+996500505644">Позвонить</a>
+    <div class="lang-switch" role="group" aria-label="Тил / Язык">
+      <button type="button" class="lang-btn" data-lang="ky">KG</button>
+      <button type="button" class="lang-btn" data-lang="ru">RU</button>
+    </div>
 
-    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+    <a class="btn btn-primary header-cta" href="tel:+996500505644" data-i18n="call_btn">Чалуу</a>
+
+    <button class="burger" id="burger" aria-label="Менюну ачуу" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -41,21 +46,21 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
-        <p class="eyebrow">Копировальные услуги в Таласе</p>
-        <h1>Печать, копирование документов<br> и фото на документ — быстро и качественно</h1>
-        <p class="hero-sub">Ксерокопия, печать, переплёт и ламинирование. Работаем каждый день, приходите или звоните заранее.</p>
+        <p class="eyebrow" data-i18n="hero_eyebrow">Таласта көчүрмө кызматтары</p>
+        <h1 data-i18n="hero_h1">Документтерди басып чыгаруу, көчүрүү жана документ үчүн сүрөт — тез жана сапаттуу</h1>
+        <p class="hero-sub" data-i18n="hero_sub">Ксерокопия, басып чыгаруу, тиктирүү жана ламинирлөө. Күн сайын иштейбиз, келиңиз же алдын ала чалыңыз.</p>
         <div class="hero-actions">
-          <a href="https://wa.me/996500505644" class="btn btn-primary" target="_blank" rel="noopener">Написать в WhatsApp</a>
+          <a href="https://wa.me/996500505644" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="whatsapp_btn">WhatsApp аркылуу жазуу</a>
           <a href="tel:+996500505644" class="btn btn-outline">+996 500 505 644</a>
         </div>
         <div class="hero-meta">
           <div class="meta-item">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-            <span>г. Талас, ул. Манас, 185</span>
+            <span data-i18n="address_text">Талас ш., Манас көч., 185</span>
           </div>
           <div class="meta-item">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
-            <span>Ежедневно 09:00–18:00</span>
+            <span data-i18n="hours_text">Күн сайын 09:00–18:00</span>
           </div>
         </div>
       </div>
@@ -69,8 +74,8 @@
 
   <section id="services" class="services">
     <div class="container">
-      <p class="eyebrow center">Услуги</p>
-      <h2 class="section-title">Чем мы можем помочь</h2>
+      <p class="eyebrow center" data-i18n="services_eyebrow">Кызматтар</p>
+      <h2 class="section-title" data-i18n="services_title">Биз эмне менен жардам бере алабыз</h2>
 
       <div class="cards">
         <div class="card">
@@ -81,9 +86,9 @@
               <path d="M6 17v4h12v-4"/>
             </svg>
           </div>
-          <h3>Ксерокопия и печать документов</h3>
-          <p>Чёрно-белая и цветная печать, копирование в формате А4. Быстро распечатаем и скопируем любые документы.</p>
-          <a class="card-link" href="https://wa.me/996500505644" target="_blank" rel="noopener">Узнать цену →</a>
+          <h3 data-i18n="service1_title">Документтерди көчүрүү жана басып чыгаруу</h3>
+          <p data-i18n="service1_desc">Ак-кара жана түстүү басып чыгаруу, А4 форматында көчүрүү. Каалаган документти тез басып беребиз жана көчүрөбүз.</p>
+          <a class="card-link" href="https://wa.me/996500505644" target="_blank" rel="noopener" data-i18n="price_link">Баасын билүү →</a>
         </div>
 
         <div class="card">
@@ -94,9 +99,9 @@
               <path d="M12 8h5M12 12h5M12 16h5"/>
             </svg>
           </div>
-          <h3>Переплёт и ламинирование</h3>
-          <p>Пружинный переплёт документов, дипломов и отчётов, а также ламинирование листов и важных бумаг.</p>
-          <a class="card-link" href="https://wa.me/996500505644" target="_blank" rel="noopener">Узнать цену →</a>
+          <h3 data-i18n="service2_title">Тиктирүү жана ламинирлөө</h3>
+          <p data-i18n="service2_desc">Документтерди, дипломдорду жана отчётторду пружиналуу тиктирүү, ошондой эле барактарды жана маанилүү кагаздарды ламинирлөө.</p>
+          <a class="card-link" href="https://wa.me/996500505644" target="_blank" rel="noopener" data-i18n="price_link">Баасын билүү →</a>
         </div>
 
         <div class="card">
@@ -106,9 +111,9 @@
               <circle cx="12" cy="13.5" r="3.5"/>
             </svg>
           </div>
-          <h3>Фото на документы</h3>
-          <p>Фотографии на паспорт, визу и другие документы, а также печать фотографий в любом формате.</p>
-          <a class="card-link" href="https://wa.me/996500505644" target="_blank" rel="noopener">Узнать цену →</a>
+          <h3 data-i18n="service3_title">Документ үчүн сүрөт</h3>
+          <p data-i18n="service3_desc">Паспортко, визага жана башка документтерге сүрөт тартабыз, ошондой эле каалаган форматта сүрөт басып беребиз.</p>
+          <a class="card-link" href="https://wa.me/996500505644" target="_blank" rel="noopener" data-i18n="price_link">Баасын билүү →</a>
         </div>
       </div>
     </div>
@@ -122,10 +127,10 @@
         </span>
       </div>
       <div class="about-text">
-        <p class="eyebrow">О нас</p>
+        <p class="eyebrow" data-i18n="about_eyebrow">Биз жөнүндө</p>
         <h2 class="section-title">CopyPaste</h2>
-        <p>Мы — копи-центр в самом сердце Таласа. Помогаем быстро распечатать, скопировать, переплести и заламинировать любые документы — без очередей и лишнего ожидания.</p>
-        <p>Цените своё время? Мы тоже. Заходите в любой день с 09:00 до 18:00 — или напишите нам заранее в WhatsApp.</p>
+        <p data-i18n="about_p1">Биз — Таластын так борборундагы копи-борборбуз. Каалаган документти тез басып чыгарууга, көчүрүүгө, тиктирүүгө жана ламинирлөөгө жардам беребиз — кезексиз жана узак күтүүсүз.</p>
+        <p data-i18n="about_p2">Убактыңызды баалайсызбы? Биз да. Күн сайын 09:00дөн 18:00гө чейин келиңиз — же WhatsApp аркылуу алдын ала жазыңыз.</p>
       </div>
     </div>
   </section>
@@ -140,12 +145,12 @@
       </span>
       <div>
         <p class="footer-brand">CopyPaste</p>
-        <p>г. Талас, ул. Манас, 185</p>
+        <p data-i18n="address_text">Талас ш., Манас көч., 185</p>
         <p><a href="tel:+996500505644">+996 500 505 644</a></p>
-        <p>Ежедневно 09:00–18:00</p>
+        <p data-i18n="hours_text">Күн сайын 09:00–18:00</p>
         <div class="footer-actions">
           <a href="https://wa.me/996500505644" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp</a>
-          <a href="tel:+996500505644" class="btn btn-outline">Позвонить</a>
+          <a href="tel:+996500505644" class="btn btn-outline" data-i18n="call_btn">Чалуу</a>
         </div>
       </div>
     </div>
@@ -161,7 +166,7 @@
   </div>
 
   <div class="container">
-    <p class="copyright">© <span id="year"></span> CopyPaste. Все права защищены.</p>
+    <p class="copyright">© <span id="year"></span> CopyPaste. <span data-i18n="rights">Бардык укуктар корголгон.</span></p>
   </div>
 </footer>
 
